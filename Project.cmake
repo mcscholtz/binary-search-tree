@@ -17,6 +17,11 @@ elseif(CMAKE_COMPILER_IS_CLANG)
 
 endif()
 
+set(default_build_type "Release")
+if(EXISTS "${CMAKE_SOURCE_DIR}/.git")
+  set(default_build_type "Debug")
+endif()
+
 # These are the corresponding output paths
 set (EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/build)
 set (LIBRARY_OUTPUT_PATH ${EXECUTABLE_OUTPUT_PATH})

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ll.h": "c",
+        "rbtree.h": "c",
+        "bst.h": "c",
+        "queue.h": "c"
+    }
+}
